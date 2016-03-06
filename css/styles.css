@@ -1,0 +1,337 @@
+@import url("http://fonts.googleapis.com/css?family=Pacifico|Open+Sans:300,800,400");
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/***************/
+/*   Général   */
+/***************/
+
+html {
+	font-size: 62.5%;
+	font-family: 'Open Sans',"Helvetica", sans-serif;
+}
+
+.hidden {
+	display: none;
+}
+
+h2 {
+	font-family: 'Pacifico',"Helvetica", sans-serif;
+	font-size: 10em;
+	text-align: center;
+	text-transform: lowercase;
+	margin-bottom: 0.5em;
+}
+
+h2 img {
+	width: 100px;
+	vertical-align: bottom;
+}
+
+/**************/
+/*   Header   */
+/**************/
+
+nav {
+	background: url("../img/nav_waves@2x.png") transparent repeat-x bottom;
+	background-size: 20px 100px;
+	margin-bottom: 10em;
+}
+
+nav div {
+	width: 960px;
+	margin: 0 auto;
+	padding: 1.5em 0 2.5em;
+}
+
+nav a {
+	color: #626672;
+	text-decoration: none;
+	font-size: 1.4em;
+	padding: 0.71em;
+	margin-right: 0.71em;
+}
+
+nav a:hover {
+	color: #2ba6cb;
+}
+
+header {
+	background: url("../img/top_bg.png") #0f66a2 no-repeat fixed center;
+}
+
+.intro {
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	min-height: 400px;
+}
+
+h1 img {
+	width: 50%;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #006FBD;
+}
+
+.intro p {
+	color: #5ab2f0;
+	font-size: 1.6em;
+	font-weight: 300;
+	margin-top: 1.2em;
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.intro a {
+	display: inline-block;
+	background: #34aab7;
+	color: white;
+	text-decoration: none;
+	border: none;
+	font-size: 1.6em;
+	padding: 1em 2em;
+	border-radius: 10em;
+	margin-top: 1em;
+	/* bonus */
+	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	-webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	-moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/****************/
+/*   Sections   */
+/****************/
+
+section {
+	padding: 10em;
+}
+
+section p {
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	line-height: 1.25;
+	color: rgba(0, 0, 0, 0.45);
+}
+
+section div {
+	width: 960px;
+	margin: 0 auto;
+}
+
+ul {
+	margin: 5em 0;
+}
+
+ul li {
+	font-size: 2em;
+	margin-bottom: 0.82em;
+	font-weight: 300;
+	color: rgba(0, 0, 0, 0.55);
+}
+
+ul h3 {
+	font-size: 2em;
+	margin-bottom: -0.2em;
+	font-weight: 800;
+	letter-spacing: -0.04em;
+}
+
+ul li:nth-child(2n) {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+	padding-bottom: 1em;
+}
+
+.files h3 {
+	color: #34aab7;
+}
+
+.files {
+	background-image: url("../img/bg1@2x.png");
+}
+
+.files h2 {
+	color: #34aab7;
+}
+
+.advice p {
+	font-family: 'Pacifico',"Helvetica", sans-serif;
+	font-size: 4em;
+	opacity: 0.3;
+	color: #34aab7;
+}
+
+.advice span {
+	font-family: 'Open Sans',"Helvetica", sans-serif;
+	font-size: 0.5em;
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+	display: block;
+	color: #7554a8;
+}
+
+/* Section : layers */
+
+.layers h3 {
+	color: #7554a8;
+}
+
+.layers {
+	background-image: url("../img/bg2@2x.png");
+}
+
+.layers h2 {
+	color: #7554a8;
+}
+
+.layers .advice p {
+	color: #7554a8;
+}
+
+/* Section : about */
+
+.about, .contact {
+	background-color: #55a1d6;
+}
+
+.about h2, .about p, .contact h2, .contact p {
+	color:#0f66a2;
+}
+
+section.about p, section.contact p {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 1.8em;
+	line-height: 1.5;
+	margin-bottom: 1.125em;
+}
+
+.about a {
+	font-weight: 800;
+	text-decoration: none;
+	color: #0f66a2;
+}
+
+.about p:last-child {
+	border-bottom: 2px dashed rgba(15, 102, 162, 0.5);
+	padding-bottom: 5em;
+}
+
+/* Section : contact */
+
+.contact {
+	padding-top: 0;
+}
+
+/******************/
+/*   Formulaire   */
+/******************/
+
+form {
+	width: 80%;
+	margin: 0 auto;
+}
+
+textarea {
+	min-height: 10em;
+}
+
+label {
+	display: none;
+}
+
+input, textarea {
+	display: block;
+	background-color: #0f66a2;
+	color: #55a1d6;
+	border: none;
+	font-family: inherit;
+	font-size: 1.6em;
+	font-weight: 300;
+	width: 95%;
+	margin-bottom: 2em;
+	padding: 10px;
+	border-radius: 0.25em;
+}
+
+input[type="submit"] {
+	background-color: #b7def8;
+	border-radius: 10em;
+	color: #0f66a2;
+	width: 8em;
+	margin: 0 auto;
+	font-weight: 800;
+}
+
+input[type="submit"]:hover {
+	background-color: white;
+	cursor: pointer;
+}
+
+input:focus, textarea:focus {
+	background-color: white;
+	color: black;
+}
+
+/* Bonus - CSS Tricks - Remplacer la couleur d'un placeholder */
+
+::-webkit-input-placeholder {
+   color: #55a1d6;;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #55a1d6;;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #55a1d6;;
+}
+:-ms-input-placeholder {
+   color: #55a1d6;;
+}
