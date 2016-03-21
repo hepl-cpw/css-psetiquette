@@ -54,8 +54,7 @@ table {
 /***************/
 
 html {
-	font-size: 62.5%;
-	font-family: 'Open Sans',"Helvetica", sans-serif;
+	font: normal 62.5% "Open Sans", "Helvetica", sans-serif;
 }
 
 .hidden {
@@ -63,16 +62,15 @@ html {
 }
 
 h2 {
-	font-family: 'Pacifico',"Helvetica", sans-serif;
-	font-size: 10em;
+	margin-bottom: 0.5em;
+	font: normal 10em "Pacifico", "Helvetica", sans-serif;
 	text-align: center;
 	text-transform: lowercase;
-	margin-bottom: 0.5em;
 }
 
 h2 img {
 	width: 100px;
-	vertical-align: bottom;
+	vertical-align: middle;
 }
 
 /**************/
@@ -80,9 +78,9 @@ h2 img {
 /**************/
 
 nav {
-	background: url("../img/nav_waves@2x.png") transparent repeat-x bottom;
-	background-size: 20px 100px;
 	margin-bottom: 10em;
+	background: transparent url( "../img/nav_waves@2x.png" ) bottom repeat-x;
+	background-size: 20px 100px;
 }
 
 nav div {
@@ -92,11 +90,12 @@ nav div {
 }
 
 nav a {
+	margin-right: 0.71em;
+	padding: 0.71em;
+	font-size: 1.4em;
 	color: #626672;
 	text-decoration: none;
-	font-size: 1.4em;
-	padding: 0.71em;
-	margin-right: 0.71em;
+	transition: color .25s ease-in-out;
 }
 
 nav a:hover {
@@ -104,14 +103,14 @@ nav a:hover {
 }
 
 header {
-	background: url("../img/top_bg.png") #0f66a2 no-repeat fixed center;
+	background: #0f66a2 url( "../img/top_bg.png" ) center no-repeat fixed;
 }
 
 .intro {
 	width: 960px;
+	min-height: 400px;
 	margin: 0 auto;
 	text-align: center;
-	min-height: 400px;
 }
 
 h1 img {
@@ -121,27 +120,25 @@ h1 img {
 }
 
 .intro p {
-	color: #5ab2f0;
-	font-size: 1.6em;
-	font-weight: 300;
 	margin-top: 1.2em;
-	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+	font-weight: 300;
+	font-size: 1.6em;
+	color: #5ab2f0;
+	text-shadow: 0 2px 2px rgba( 0, 0, 0, 0.05 );
 }
 
 .intro a {
 	display: inline-block;
+	margin-top: 1em;
+	padding: 1em 2em;
 	background: #34aab7;
+	border: none;
+	border-radius: 10em;
+	font-size: 1.6em;
 	color: white;
 	text-decoration: none;
-	border: none;
-	font-size: 1.6em;
-	padding: 1em 2em;
-	border-radius: 10em;
-	margin-top: 1em;
 	/* bonus */
 	box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-	-webkit-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.25);
-	-moz-box-shadow: 0 2px 0px rgba(0, 0, 0, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.25);
 	text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -154,11 +151,11 @@ section {
 }
 
 section p {
-	text-align: center;
 	font-size: 2.4em;
 	font-weight: 300;
 	line-height: 1.25;
-	color: rgba(0, 0, 0, 0.45);
+	color: rgba( 0, 0, 0, 0.45 );
+	text-align: center;
 }
 
 section div {
@@ -171,15 +168,15 @@ ul {
 }
 
 ul li {
-	font-size: 2em;
 	margin-bottom: 0.82em;
+	font-size: 2em;
 	font-weight: 300;
-	color: rgba(0, 0, 0, 0.55);
+	color: rgba( 0, 0, 0, 0.55 );
 }
 
 ul h3 {
-	font-size: 2em;
 	margin-bottom: -0.2em;
+	font-size: 2em;
 	font-weight: 800;
 	letter-spacing: -0.04em;
 }
@@ -194,7 +191,7 @@ ul li:nth-child(2n) {
 }
 
 .files {
-	background-image: url("../img/bg1@2x.png");
+	background-image: url( "../img/bg1@2x.png" );
 }
 
 .files h2 {
@@ -202,18 +199,18 @@ ul li:nth-child(2n) {
 }
 
 .advice p {
-	font-family: 'Pacifico',"Helvetica", sans-serif;
+	font-family: "Pacifico", "Helvetica", sans-serif;
 	font-size: 4em;
-	opacity: 0.3;
 	color: #34aab7;
+	opacity: 0.3;
 }
 
 .advice span {
+	display: block;
 	font-family: 'Open Sans',"Helvetica", sans-serif;
 	font-size: 0.5em;
 	text-transform: uppercase;
 	letter-spacing: 0.25em;
-	display: block;
 	color: #7554a8;
 }
 
@@ -224,7 +221,7 @@ ul li:nth-child(2n) {
 }
 
 .layers {
-	background-image: url("../img/bg2@2x.png");
+	background-image: url( "../img/bg2@2x.png" );
 }
 
 .layers h2 {
@@ -242,27 +239,26 @@ ul li:nth-child(2n) {
 }
 
 .about h2, .about p, .contact h2, .contact p {
-	color:#0f66a2;
+	color: #0f66a2;
 }
 
 section.about p, section.contact p {
 	width: 80%;
-	margin: 0 auto;
-	text-align: left;
+	margin: 0 auto 1.125em;
 	font-size: 1.8em;
 	line-height: 1.5;
-	margin-bottom: 1.125em;
+ 	text-align: left;
 }
 
 .about a {
 	font-weight: 800;
-	text-decoration: none;
 	color: #0f66a2;
+	text-decoration: none;
 }
 
 .about p:last-child {
-	border-bottom: 2px dashed rgba(15, 102, 162, 0.5);
 	padding-bottom: 5em;
+	border-bottom: 2px dashed rgba(15, 102, 162, 0.5);
 }
 
 /* Section : contact */
@@ -290,25 +286,24 @@ label {
 
 input, textarea {
 	display: block;
-	background-color: #0f66a2;
-	color: #55a1d6;
-	border: none;
-	font-family: inherit;
-	font-size: 1.6em;
-	font-weight: 300;
 	width: 95%;
 	margin-bottom: 2em;
 	padding: 10px;
+	background-color: #0f66a2;
+	border: none;
 	border-radius: 0.25em;
+	font-weight: 300;
+	font-size: 1.6em;
+	color: #55a1d6;
 }
 
 input[type="submit"] {
-	background-color: #b7def8;
-	border-radius: 10em;
-	color: #0f66a2;
 	width: 8em;
 	margin: 0 auto;
+	background-color: #b7def8;
+	border-radius: 10em;
 	font-weight: 800;
+	color: #0f66a2;
 }
 
 input[type="submit"]:hover {
@@ -324,14 +319,14 @@ input:focus, textarea:focus {
 /* Bonus - CSS Tricks - Remplacer la couleur d'un placeholder */
 
 ::-webkit-input-placeholder {
-   color: #55a1d6;;
+   color: #55a1d6;
 }
 :-moz-placeholder { /* Firefox 18- */
-   color: #55a1d6;;
+   color: #55a1d6;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #55a1d6;;
+   color: #55a1d6;
 }
 :-ms-input-placeholder {
-   color: #55a1d6;;
+   color: #55a1d6;
 }
